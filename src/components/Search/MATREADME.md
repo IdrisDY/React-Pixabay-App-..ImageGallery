@@ -1,0 +1,3 @@
+I used Material-UI for this and it involves importing componnents such as navbar, textfield ...
+You can do custom config by giving it attributes such as name, value floatingLabelText ... in its Tag
+Remember to always import the MuiThemeProvider

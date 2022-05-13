@@ -1,0 +1,81 @@
+# npm resolution error report
+
+2022-05-12T11:13:28.043Z
+
+While resolving: sh@0.1.0
+Found: react@17.0.2
+node_modules/react
+  react@"^17.0.2" from the root project
+
+Could not resolve dependency:
+peer react@"^15.4.0 || ^16.0.0" from material-ui@0.20.2
+node_modules/material-ui
+  material-ui@"*" from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force, or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.
+
+Raw JSON explanation object:
+
+{
+  "code": "ERESOLVE",
+  "current": {
+    "name": "react",
+    "version": "17.0.2",
+    "whileInstalling": {
+      "name": "sh",
+      "version": "0.1.0",
+      "path": "C:\\Users\\A. A. ADEKUNLE\\Desktop\\React-ImageGallery"
+    },
+    "location": "node_modules/react",
+    "isWorkspace": false,
+    "dependents": [
+      {
+        "type": "prod",
+        "name": "react",
+        "spec": "^17.0.2",
+        "from": {
+          "location": "C:\\Users\\A. A. ADEKUNLE\\Desktop\\React-ImageGallery"
+        }
+      }
+    ]
+  },
+  "currentEdge": {
+    "type": "prod",
+    "name": "react",
+    "spec": "^17.0.2",
+    "from": {
+      "location": "C:\\Users\\A. A. ADEKUNLE\\Desktop\\React-ImageGallery"
+    }
+  },
+  "edge": {
+    "type": "peer",
+    "name": "react",
+    "spec": "^15.4.0 || ^16.0.0",
+    "error": "INVALID",
+    "from": {
+      "name": "material-ui",
+      "version": "0.20.2",
+      "whileInstalling": {
+        "name": "sh",
+        "version": "0.1.0",
+        "path": "C:\\Users\\A. A. ADEKUNLE\\Desktop\\React-ImageGallery"
+      },
+      "location": "node_modules/material-ui",
+      "isWorkspace": false,
+      "dependents": [
+        {
+          "type": "prod",
+          "name": "material-ui",
+          "spec": "*",
+          "from": {
+            "location": "C:\\Users\\A. A. ADEKUNLE\\Desktop\\React-ImageGallery"
+          }
+        }
+      ]
+    }
+  },
+  "strictPeerDeps": false,
+  "force": false
+}
